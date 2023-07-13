@@ -7,14 +7,24 @@
 
 import Foundation
 
-class MoviesViewModel {
-    private let service: MoviesServiceType
-    var model: MoviesModelType
+protocol MoviesViewModelType {
+    init(model: MoviesModelType, service: MoviesServiceType)
+    func getMovies()
+    
+    var model: MoviesModelType { get }
+    var service: MoviesServiceType { get }
+    
+    var reloadTable: (() -> Void)? { get set }
+}
+
+class MoviesViewModel: MoviesViewModelType {
+    let service: MoviesServiceType
+    let model: MoviesModelType
     
     var reloadTable: (() -> Void)?
     
-    init(movies: MoviesModelType, service: MoviesServiceType) {
-        self.model = movies
+    required init(model: MoviesModelType, service: MoviesServiceType) {
+        self.model = model
         self.service = service
     }
     

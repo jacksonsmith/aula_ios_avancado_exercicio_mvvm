@@ -26,6 +26,7 @@ class MainCoordinator: Coordinator {
             
         case .moviesList:
             let vc = MoviesListController()
+            vc.viewModel = MoviesViewModel(model: MoviesModel(), service: MoviesService())
             vc.coordinator = self
             navigationController?.pushViewController(vc, animated: true)
         }
@@ -44,6 +45,7 @@ class MainCoordinator: Coordinator {
     
     private func startWithViewCode() {
         let vc = MoviesListController()
+        vc.viewModel = MoviesViewModel(model: MoviesModel(), service: MoviesService())
         vc.coordinator = self
         navigationController?.setViewControllers([vc], animated: false)
     }

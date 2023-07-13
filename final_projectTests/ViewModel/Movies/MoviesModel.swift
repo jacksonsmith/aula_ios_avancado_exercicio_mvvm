@@ -15,7 +15,7 @@ class MoviesModelTests: XCTestCase {
         let model = MoviesModelMock()
         let service = MoviesServiceMock()
         
-        let viewModel = MoviesViewModel(movies: model, service: service)
+        let viewModel = MoviesViewModel(model: model, service: service)
         
         viewModel.getMovies()
         

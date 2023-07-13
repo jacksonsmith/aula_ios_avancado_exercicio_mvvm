@@ -10,6 +10,8 @@
 		7A181F1A2A6086DA00954561 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A181F152A6086C600954561 /* MoviesModel.swift */; };
 		7A181F1B2A60871E00954561 /* MoviesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A181F142A6086C600954561 /* MoviesServiceMock.swift */; };
 		7A181F1C2A60872200954561 /* MoviesModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A181F132A6086C600954561 /* MoviesModelMock.swift */; };
+		7A181F202A60878400954561 /* MoviesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A181F1F2A60878400954561 /* MoviesListController.swift */; };
+		7A181F232A60885A00954561 /* MoviesViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A181F222A60885A00954561 /* MoviesViewModelMock.swift */; };
 		7A61E82A28A564A80053566B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61E82928A564A80053566B /* AppDelegate.swift */; };
 		7A61E82C28A564A80053566B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61E82B28A564A80053566B /* SceneDelegate.swift */; };
 		7A61E82E28A564A80053566B /* MoviesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61E82D28A564A80053566B /* MoviesListController.swift */; };
@@ -57,6 +59,8 @@
 		7A181F132A6086C600954561 /* MoviesModelMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesModelMock.swift; sourceTree = "<group>"; };
 		7A181F142A6086C600954561 /* MoviesServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesServiceMock.swift; sourceTree = "<group>"; };
 		7A181F152A6086C600954561 /* MoviesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		7A181F1F2A60878400954561 /* MoviesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListController.swift; sourceTree = "<group>"; };
+		7A181F222A60885A00954561 /* MoviesViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelMock.swift; sourceTree = "<group>"; };
 		7A61E82628A564A80053566B /* final_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A61E82928A564A80053566B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A61E82B28A564A80053566B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 		7A181F0F2A6086C600954561 /* final_projectTests */ = {
 			isa = PBXGroup;
 			children = (
+				7A181F282A6089C700954561 /* Mocks */,
+				7A181F1D2A60876200954561 /* View */,
 				7A181F102A6086C600954561 /* ViewModel */,
 			);
 			path = final_projectTests;
@@ -137,17 +143,33 @@
 		7A181F112A6086C600954561 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				7A181F122A6086C600954561 /* Mocks */,
 				7A181F152A6086C600954561 /* MoviesModel.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
 		};
-		7A181F122A6086C600954561 /* Mocks */ = {
+		7A181F1D2A60876200954561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A181F1E2A60877200954561 /* MoviesList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A181F1E2A60877200954561 /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				7A181F1F2A60878400954561 /* MoviesListController.swift */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		7A181F282A6089C700954561 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				7A181F132A6086C600954561 /* MoviesModelMock.swift */,
 				7A181F142A6086C600954561 /* MoviesServiceMock.swift */,
+				7A181F222A60885A00954561 /* MoviesViewModelMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -526,6 +548,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A181F202A60878400954561 /* MoviesListController.swift in Sources */,
+				7A181F232A60885A00954561 /* MoviesViewModelMock.swift in Sources */,
 				7A181F1B2A60871E00954561 /* MoviesServiceMock.swift in Sources */,
 				7A181F1C2A60872200954561 /* MoviesModelMock.swift in Sources */,
 				7A181F1A2A6086DA00954561 /* MoviesModel.swift in Sources */,

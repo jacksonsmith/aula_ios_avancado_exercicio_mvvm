@@ -12,14 +12,13 @@ import UIKit
 class MoviesListController: UIViewController, Coordinating, UITableViewDataSource, UITableViewDelegate {
     
     var coordinator: Coordinator?
+    var viewModel: MoviesViewModelType!
     
     private var tableView: UITableView = {
         let table =  UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
-    
-    private var viewModel: MoviesViewModel!
     
     // BIND GET SETUP
     private var data: [Movies] {
@@ -48,7 +47,6 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
     // MARK: - Private Functions
     
     private func bindSetup() {
-        viewModel = MoviesViewModel(movies: MoviesModel(), service: MoviesService())
         viewModel.reloadTable = self.reloadTable
     }
     
