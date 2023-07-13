@@ -17,6 +17,7 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
     private var tableView: UITableView = {
         let table =  UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
+        table.backgroundColor = .white
         return table
     }()
     

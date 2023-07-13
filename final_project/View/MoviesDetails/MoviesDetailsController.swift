@@ -18,7 +18,10 @@ class MovieDetailsController: UIViewController, Coordinating {
         let view = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
         
+        view.accessibilityIdentifier = "movie_title"
+        
         view.text = movie?.title
+        view.textColor = .black
         
         return view
     }()
@@ -28,7 +31,8 @@ class MovieDetailsController: UIViewController, Coordinating {
         view.translatesAutoresizingMaskIntoConstraints = false
         
         view.text = String(movie?.voteAverage ?? 0.0)
-        
+        view.textColor = .black
+                
         return view
     }()
     
@@ -38,6 +42,7 @@ class MovieDetailsController: UIViewController, Coordinating {
         view.translatesAutoresizingMaskIntoConstraints = false
         
         view.text = String(movie?.voteCount ?? 0)
+        view.textColor = .black
         
         return view
     }()

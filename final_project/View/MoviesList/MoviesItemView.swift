@@ -26,6 +26,7 @@ class MoviesItemViewCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         
         view.textColor = .black
+        view.backgroundColor = .white
         
         view.font = UIFont.boldSystemFont(ofSize: 16)
         
@@ -40,6 +41,7 @@ class MoviesItemViewCell: UITableViewCell {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textColor = .black
+        view.backgroundColor = .white
         
         view.font = UIFont.systemFont(ofSize: 14)
         
