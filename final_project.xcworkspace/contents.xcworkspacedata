@@ -4,31 +4,6 @@
    <FileRef
       location = "group:final_project.xcodeproj">
    </FileRef>
-   <Group
-      location = "group:/Users/jackson/Desktop/aula_ios_avancado_exercicio/final_projectUITests/final_projectTests"
-      name = "final_projectTests">
-      <Group
-         location = "group:final_projectTests/ViewModel"
-         name = "ViewModel">
-         <Group
-            location = "group:final_projectTests/ViewModel/Movies"
-            name = "Movies">
-            <Group
-               location = "group:final_projectTests/ViewModel/Movies/Mocks"
-               name = "Mocks">
-               <FileRef
-                  location = "group:final_projectTests/ViewModel/Movies/Mocks/MoviesModelMock.swift">
-               </FileRef>
-               <FileRef
-                  location = "group:final_projectTests/ViewModel/Movies/Mocks/MoviesServiceMock.swift">
-               </FileRef>
-            </Group>
-            <FileRef
-               location = "group:final_projectTests/ViewModel/Movies/MoviesModel.swift">
-            </FileRef>
-         </Group>
-      </Group>
-   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
